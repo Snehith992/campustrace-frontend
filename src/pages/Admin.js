@@ -41,7 +41,7 @@ export default function Admin() {
     fetchClaims();
     fetchStats();
 
-  }, []);
+  }, [navigate]);
 
   async function fetchClaims() {
 

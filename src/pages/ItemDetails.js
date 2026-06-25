@@ -11,7 +11,7 @@ export default function ItemDetails() {
 
   useEffect(() => {
     fetchItem();
-  }, []);
+  }, [id]);
 
   async function fetchItem() {
 
