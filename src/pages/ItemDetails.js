@@ -10,8 +10,6 @@ export default function ItemDetails() {
   const [item, setItem] = useState(null);
 
   useEffect(() => {
-    fetchItem();
-  }, [id]);
 
   async function fetchItem() {
 
@@ -26,10 +24,15 @@ export default function ItemDetails() {
     } catch (error) {
 
       console.log(error);
-
       alert("Error loading item");
+
     }
+
   }
+
+  fetchItem();
+
+}, [id]);
 
   if (!item) {
 
